@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="ru">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Кафе компот</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $('#header_incl').load("include/header.html", function () {
+                $('#menu').addClass('active');
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div class="content">
+    <div id="header_incl"></div>
+    <div class="text_block">
+        <table class="menu" border="0">
+            <tbody>
+            <tr>
+                <td><a href="child/kholodnye-zakuski.html">Холодные закуски <img src="img/menu/hzakuski.png" border="0"
+                alt="" width="249" height="187"></a>
+                </td>
+                <td><a href="child/salaty.html">Салаты <img src="img/menu/salat.png" border="0" alt=""></a></td>
+
+                <!--<td><a href="menyu/zakuska.html">Закуски </a><a href="menyu/zakuska.html"><img src="img/menu/zakus.png"-->
+                                                                                               <!--border="0" alt=""></a>-->
+                <!--</td>-->
+            </tr>
+            <tr>
+                <td><a href="child/myaso.html">Горячее</a> <a href="child/myaso.html"><img src="img/menu/myaso.png"
+                                                                                           border="0"
+                                                                                           alt=""></a></td>
+                <td><a href="child/bake.html">Выпечка</a> <a href="child/bake.html"><img src="img/menu/vipechka.png"
+                                                                                           border="0"
+                                                                                           alt=""
+                                                                                           width="279" height="255"></a></td>
+            </tr>
+            <tr>
+                <td><a href="child/desert.html">Десерт</a> <a href="child/desert.html"><img
+                        src="img/menu/des.png" border="0" alt="" width="279" height="255"></a>&nbsp;</td>
+                <td><a href="child/beverages.html">Напитки</a> <a href="child/beverages.html"><img src="img/menu/napitki.png"
+                                                                                        border="0"
+                                                                                        alt=""
+                                                                                        width="279" height="255"></a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    $(".menu").find("td").mousemove(function () {
+        $(this).animate({
+            backgroundColor: "#CCCCCC",
+            color: "#fff",
+            borderColor: "1px solid #000000"
+        }, 10);
+    });
+    $(".menu").find("td").mouseout(function () {
+        $(this).animate({
+            backgroundColor: "transparent",
+            color: "#000",
+            borderColor: "1px solid #EFEFEE"
+        }, 10);
+    });
+</script>
+</body>
+</html>

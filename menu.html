@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="ru">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Кафе компот</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $('#header_incl').load("include/header.html", function () {
+                $('#menu').addClass('active');
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div class="content">
+    <div id="header_incl"></div>
+    <div class="text_block" style="text-align: center">
+        <table border="0" align="center">
+            <tbody>
+            <tr>
+                <td>
+                    <a href="menu_main.html">
+                        <img src="img/menu/main_menu.jpg" border="0" alt="" width="400" height="400">
+                    </a>
+                </td>
+                <td>
+                    <a href="menu_rus.html">
+                        <img src="img/menu/rus_obed.jpg" border="0" alt="" width="400" height="400">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="menu_child.html">
+                        <img src="img/menu/child_menu.jpg" border="0" alt="" width="400" height="400">
+                    </a>
+                </td>
+                <td>
+                    <a href="menu_banket.html">
+                        <img src="img/menu/banket_menu.jpg" border="0" alt="" width="400" height="400">
+                    </a>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

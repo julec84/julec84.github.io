@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="ru">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <title>Кафе компот</title>
+    <script>
+        $(function(){
+            $('#header_incl').load("include/header.html", function(){
+                $('#foto').addClass('active');
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div class="content">
+    <div id="header_incl"></div>
+    <div class="text_block">
+        <div class="popup-gallery">
+            <a href="album/kompot-1%20(1).JPG" title="фото"><img src="album/kompot-1%20(1).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(2).JPG" title="фото"><img src="album/kompot-1%20(2).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(3).JPG" title="фото"><img src="album/kompot-1%20(3).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(6).jpg" title="фото"><img src="album/kompot-1%20(6).jpg" width="150" height="150"></a>
+            <a href="album/kompot-1%20(7).jpg" title="фото"><img src="album/kompot-1%20(7).jpg" width="150" height="150"></a>
+            <a href="album/kompot-1%20(33).jpg" title="фото"><img src="album/kompot-1%20(33).jpg" width="150" height="150"></a>
+            <a href="album/kompot-1%20(8).jpg" title="фото"><img src="album/kompot-1%20(8).jpg" width="150" height="150"></a>
+            <a href="album/kompot-1%20(9).jpg" title="фото"><img src="album/kompot-1%20(9).jpg" width="150" height="150"></a>
+            <a href="album/kompot-1%20(10).jpg" title="фото"><img src="album/kompot-1%20(10).jpg" width="150" height="150"></a>
+            <a href="album/kompot-1%20(11).jpg" title="фото"><img src="album/kompot-1%20(11).jpg" width="150" height="150"></a>
+            <a href="album/kompot-1%20(12).jpg" title="фото"><img src="album/kompot-1%20(12).jpg" width="150" height="150"></a>
+            <a href="album/kompot-1%20(13).jpg" title="фото"><img src="album/kompot-1%20(13).jpg" width="150" height="150"></a>
+            <a href="album/kompot-1%20(14).jpg" title="фото"><img src="album/kompot-1%20(14).jpg" width="150" height="150"></a>
+            <a href="album/kompot-1%20(15).jpg" title="фото"><img src="album/kompot-1%20(15).jpg" width="150" height="150"></a>
+            <a href="album/kompot-1%20(16).jpg" title="фото"><img src="album/kompot-1%20(16).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(17).JPG" title="фото"><img src="album/kompot-1%20(17).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(18).JPG" title="фото"><img src="album/kompot-1%20(18).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(19).JPG" title="фото"><img src="album/kompot-1%20(19).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(20).JPG" title="фото"><img src="album/kompot-1%20(20).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(21).JPG" title="фото"><img src="album/kompot-1%20(21).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(22).JPG" title="фото"><img src="album/kompot-1%20(22).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(23).JPG" title="фото"><img src="album/kompot-1%20(23).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(24).JPG" title="фото"><img src="album/kompot-1%20(24).JPG" width="150" height="150"></a>
+            <a href="album/kompot-1%20(25).JPG" title="фото"><img src="album/kompot-1%20(25).JPG" width="150" height="150"></a>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Загрузка...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+                tPrev: 'Предыдущая (Нажмите влево)',
+                tNext: 'Следующая (Нажмите вправо)',
+                tCounter: '%curr% из %total%'
+            },
+            image: {
+                tError: '<a href="%url%">Фото #%curr%</a> не загружено.',
+                titleSrc: function(item) {
+                    return item.el.attr('title') + '<small>Кафе компот</small>';
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
